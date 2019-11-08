@@ -8,6 +8,7 @@ add2 <- function(a, b){
 
 x <- add2(3,4)
 x
+# [1] 7
 
 ###
 # 2. Функція above(x, n), яка приймає вектор та число n,
@@ -21,6 +22,7 @@ above <- function(x, n= 10){
 
 x <- above(c(5:15), 12)
 x
+# [1] 13 14 15
 
 ###
 # 3.Функція my_ifelse(x, exp, n), яка приймає вектор x,
@@ -54,6 +56,7 @@ my_ifelse <- function(x, exp, n){
 
 x <- my_ifelse(c(1:10), ">", 3)
 x
+# [1]  4  5  6  7  8  9 10
 
 ###
 # 4. Функція columnmean(x, removeNA), яка розраховує середнє значення
@@ -75,3 +78,5 @@ matrix
 
 x <- columnmean(matrix)
 x
+# column1 column2 column3 
+# 1.600  35.375   4.000 

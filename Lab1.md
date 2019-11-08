@@ -63,6 +63,12 @@ column3 <- c(3.5, 2.8, 4.6, 5.1)
 anotherMatrix <- cbind(column1, column2, column3)
 anotherMatrix
 
+#      column1 column2 column3
+# [1,]     0.5     1.3     3.5
+# [2,]     3.9   131.0     2.8
+# [3,]     0.0     2.2     4.6
+# [4,]     2.0     7.0     5.1
+
 #####
 # 4. Створити довільний список (list), в який включити всі базові типи. 
 #####
@@ -85,9 +91,12 @@ data6 <- c(1, 2, 3, 4, NA, 6, 7, NA, 9, NA, 11)
 
 match(NA, data6)
 
+# [1] 5
+
 numberOfNAElements <- length(data6[is.na(data6)])
 numberOfNAElements
 
+# [1] 3
 
 #####
 # 7. Створити довільний data frame та вивести в консоль. 
@@ -96,6 +105,9 @@ numberOfNAElements
 myDataFrame <- data.frame("N" = 1:2, "Name" = c("Bob", "Stan"), "Weight" = c(78, 80))
 myDataFrame
 
+#N Name Weight
+#1 1  Bob     78
+#2 2 Stan     80
 
 #####
 # 8. Змінити імена стовпців цього data frame.
@@ -103,3 +115,7 @@ myDataFrame
 
 names(myDataFrame) <- c("Order", "Customer", "Price")
 myDataFrame
+
+#   Order Customer Price
+# 1     1      Bob    78
+# 2     2     Stan    80
